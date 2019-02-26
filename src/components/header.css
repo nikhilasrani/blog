@@ -1,0 +1,42 @@
+.toolbar {
+  background: purple;
+  height: 56px;
+}
+
+.toolbar__navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+.toolbar__logo {
+  margin: 0.5rem;
+}
+.toolbar__logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.toolbar-navigation-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.spacer {
+  flex: 1;
+}
+.toolbar-navigation-items li {
+  padding: 0 25px;
+}
+.toolbar__navigation-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.toolbar__navigation-items a:hover {
+  color: orange;
+}
+.toolbar__navigation-items a:active {
+  color: orange;
+}
