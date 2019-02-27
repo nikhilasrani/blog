@@ -11,7 +11,7 @@ const Social = () => (
       <li>
         <a
           href="https://github.com/nikhilasrani"
-          class="github-icon"
+          class="social-button github-button"
           target="_blank"
         >
           <FaGithub />
@@ -20,7 +20,7 @@ const Social = () => (
       <li>
         <a
           href=" https://twitter.com/NikhilBAsrani"
-          class="twitter-icon"
+          class="social-button twitter-button"
           target="_blank"
         >
           <FaTwitter />
@@ -29,7 +29,7 @@ const Social = () => (
       <li>
         <a
           href="https://www.linkedin.com/in/nikhil-asrani/"
-          class="linkedin-icon"
+          class="social-button linkedin-button"
           target="_blank"
         >
           <FaLinkedin />
@@ -38,7 +38,7 @@ const Social = () => (
       <li>
         <a
           href="https://medium.com/@asrani.nikhil"
-          class="medium-icon"
+          class="social-button medium-button"
           target="_blank"
         >
           <FaMedium />

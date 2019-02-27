@@ -12,5 +12,43 @@
 .social-links-container a {
   display: inline-block;
   padding: 0 20px;
-  font-size: 20px;
+  font-size: 40px;
+}
+
+.github-button:hover {
+  color: #333;
+}
+.twitter-button:hover {
+  color: #1da1f2;
+}
+.linkedin-button:hover {
+  color: #0077b5;
+}
+.medium-button:hover {
+  color: #00ab6c;
+}
+
+.social-button:hover {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  animation-name: icon-wobble;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes icon-wobble {
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
