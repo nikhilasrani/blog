@@ -1,6 +1,7 @@
 .toolbar {
   background: purple;
   height: 56px;
+  padding-bottom: -1rem;
 }
 
 .toolbar__navigation {

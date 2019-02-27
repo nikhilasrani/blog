@@ -5,8 +5,6 @@ title: "Where I have been and what have I been upto?"
 author: "Nikhil Asrani"
 ---
 
-# Where I have been and what have I been upto?
-
 Hello Internet folks 👋. This is my first in what I hope would be a series of Medium blogs.
 
 ![](https://cdn-images-1.medium.com/max/2000/1*q98_qb75VG1UgsrMkrutAg.gif)

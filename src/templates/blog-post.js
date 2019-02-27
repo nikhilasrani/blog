@@ -8,13 +8,24 @@ export default function Template({ data }) {
 
   return (
     <Layout>
-      <Link to="/blog">Go Back</Link>
-      <hr />
-      <h1>{post.frontmatter.title}</h1>
-      <h4>
-        Posted by{post.frontmatter.author} on {post.frontmatter.date}
-      </h4>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div
+        className="content-wrapper"
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0px 1.0875rem 1.45rem`,
+          paddingTop: 0,
+          height: "100%",
+        }}
+      >
+        <Link to="/blog">Go Back</Link>
+        <hr />
+        <h2>{post.frontmatter.title}</h2>
+        <h4>
+          Posted by{post.frontmatter.author} on {post.frontmatter.date}
+        </h4>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </Layout>
   )
 }

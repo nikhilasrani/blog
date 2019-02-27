@@ -6,7 +6,6 @@ import "../components/header.css"
 const Header = ({ siteTitle }) => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
-      <div />
       <div className="toolbar__logo">
         <Link to="/">Nikhil Asrani</Link>
       </div>
