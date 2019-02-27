@@ -620,3 +620,13 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-content {
+  flex-grow: 1;
+}
