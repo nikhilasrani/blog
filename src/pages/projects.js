@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer/footer"
 const ProjectsPage = () => (
   <Layout>
     <div
@@ -17,16 +17,17 @@ const ProjectsPage = () => (
       <SEO title="Projects" />
       <div>
         <h2>Projects </h2>
+        <p>Coming Soon.</p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-          vitae reiciendis enim dolore omnis unde similique consectetur,
-          molestias fugit nihil, atque delectus commodi, voluptatum accusantium.
-          Voluptate hic omnis sapiente molestiae, ad ipsa dignissimos
-          exercitationem odit animi at quibusdam, inventore in.
+          Till then check out my{" "}
+          <a href="https://github.com/nikhilasrani" target="_blank">
+            github
+          </a>
+          .
         </p>
-        <p>Here are some of my projects...</p>
       </div>
     </div>
+    <Footer />
   </Layout>
 )
 export default ProjectsPage

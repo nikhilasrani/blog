@@ -9,7 +9,9 @@ h1 {
   color: white;
   text-align: center;
 }
-
+.social-buttons {
+  color: white;
+}
 .Header {
   display: hide;
 }

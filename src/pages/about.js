@@ -1,7 +1,9 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/header/header"
+import Social from "../components/social/social"
+import Footer from "../components/footer/footer"
 
 const AboutPage = () => (
   <Layout>
@@ -18,16 +20,16 @@ const AboutPage = () => (
       <SEO title="About Me" />
       <div>
         <h2>About Me </h2>
+        <p>Nothing to see here (as of right now...)</p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-          vitae reiciendis enim dolore omnis unde similique consectetur,
-          molestias fugit nihil, atque delectus commodi, voluptatum accusantium.
-          Voluptate hic omnis sapiente molestiae, ad ipsa dignissimos
-          exercitationem odit animi at quibusdam, inventore in.
+          You can contact me at{" "}
+          <a href="https://twitter.com/NikhilBAsrani" target="_blank">
+            twitter
+          </a>
         </p>
-        <p>Here are some of my projects...</p>
       </div>
     </div>
+    <Footer />
   </Layout>
 )
 export default AboutPage

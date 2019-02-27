@@ -1,7 +1,5 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import "../components/social.css"
+import "../social/social.css"
 
 import { FaGithub, FaTwitter, FaMedium, FaLinkedin } from "react-icons/fa"
 
@@ -13,6 +11,7 @@ const Social = () => (
           href="https://github.com/nikhilasrani"
           class="social-button github-button"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaGithub />
         </a>
@@ -22,6 +21,7 @@ const Social = () => (
           href=" https://twitter.com/NikhilBAsrani"
           class="social-button twitter-button"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaTwitter />
         </a>
@@ -31,6 +31,7 @@ const Social = () => (
           href="https://www.linkedin.com/in/nikhil-asrani/"
           class="social-button linkedin-button"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaLinkedin />
         </a>
@@ -40,6 +41,7 @@ const Social = () => (
           href="https://medium.com/@asrani.nikhil"
           class="social-button medium-button"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaMedium />
         </a>

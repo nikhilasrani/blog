@@ -1,7 +1,8 @@
 import React from "react"
 import Link from "gatsby-link"
-
 import Layout from "../components/layout"
+import Footer from "../components/footer/footer"
+
 import { FaUserEdit, FaCalendar } from "react-icons/fa"
 
 const BlogPage = ({ data }) => (
@@ -34,6 +35,7 @@ const BlogPage = ({ data }) => (
         </div>
       ))}
     </div>
+    <Footer />
   </Layout>
 )
 export const PageQuery = graphql`
