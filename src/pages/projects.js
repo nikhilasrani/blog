@@ -17,10 +17,15 @@ const ProjectsPage = () => (
       <SEO title="Projects" />
       <div>
         <h2>Projects </h2>
+
         <p>Coming Soon.</p>
         <p>
           Till then check out my{" "}
-          <a href="https://github.com/nikhilasrani" target="_blank">
+          <a
+            href="https://github.com/nikhilasrani"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             github
           </a>
           .

@@ -9,7 +9,7 @@ const SocialHome = () => (
       <li>
         <a
           href="https://github.com/nikhilasrani"
-          class="social-button github-button"
+          className="social-button github-button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -19,7 +19,7 @@ const SocialHome = () => (
       <li>
         <a
           href=" https://twitter.com/NikhilBAsrani"
-          class="social-button twitter-button"
+          className="social-button twitter-button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,7 +29,7 @@ const SocialHome = () => (
       <li>
         <a
           href="https://www.linkedin.com/in/nikhil-asrani/"
-          class="social-button linkedin-button"
+          className="social-button linkedin-button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -39,7 +39,7 @@ const SocialHome = () => (
       <li>
         <a
           href="https://medium.com/@asrani.nikhil"
-          class="social-button medium-button"
+          className="social-button medium-button"
           target="_blank"
           rel="noopener noreferrer"
         >

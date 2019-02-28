@@ -1,8 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header/header"
-import Social from "../components/social/social"
 import Footer from "../components/footer/footer"
 
 const AboutPage = () => (
@@ -23,7 +21,11 @@ const AboutPage = () => (
         <p>Nothing to see here (as of right now...)</p>
         <p>
           You can contact me at{" "}
-          <a href="https://twitter.com/NikhilBAsrani" target="_blank">
+          <a
+            href="https://twitter.com/NikhilBAsrani"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             twitter
           </a>
         </p>
