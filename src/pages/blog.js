@@ -28,7 +28,12 @@ const BlogPage = ({ data }) => (
           </small>
           <br />
           <br />
-          <Link to={post.node.frontmatter.path}>Read more...</Link>
+          <Link
+            to={post.node.frontmatter.path}
+            style={{ color: "rebeccapurple" }}
+          >
+            Read more...
+          </Link>
           <br />
           <br />
           <hr />

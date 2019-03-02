@@ -62,7 +62,15 @@ const AboutPage = () => (
           >
             Finalists at the International Space Station Design Competition
           </a>{" "}
-          in 2012 held at NASA's Johnson Space Center in Houston Texas.
+          in 2012 held at NASA's Johnson Space Center in Houston Texas. You can
+          checkout the interviews we gave to a local news channel{" "}
+          <a
+            href="https://www.youtube.com/playlist?list=PLQm9GmJUXfTDYUpkVqEnt-0rgIXXtz-CA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here.
+          </a>
         </p>
         <p>
           You can <a href="mailto:asrani.nikhil@gmail.com">email</a> me or

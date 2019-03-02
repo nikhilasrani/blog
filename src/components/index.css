@@ -37,7 +37,7 @@ h2 {
 .bgd-wrapper {
   margin: 0;
   padding: 0;
-  background: purple;
+  background: rebeccapurple;
 }
 body,
 html {
@@ -73,6 +73,6 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-colour: #000000;
+  background-color: #000000;
   z-index: -1 !important;
 }
