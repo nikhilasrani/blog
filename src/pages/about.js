@@ -27,8 +27,8 @@ const AboutPage = () => (
           style={{ borderRadius: "50%", height: "150px", width: "150px" }}
         />
         <p>
-          I'm a 23 year old Front End Engineer who has been born and brought up
-          in Bangalore. I was previously working in an Operations role at
+          I'm a 23 year old Front End Engineer who was born and has been brought
+          up in Bangalore. I was previously working in an Operations role at
           Accenture for their{" "}
           <a href="https://www.accenture.com/in-en/service-mywizard-intelligent-automation-platform">
             intelligent automation platform

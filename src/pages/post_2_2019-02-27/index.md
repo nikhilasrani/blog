@@ -63,4 +63,3 @@ Gatsby plugins can be installed using the Node Package Manager(npm). Whenever we
 - gatsby-plugin-prefetch-google-fonts: A Gatsby plugin to download and prefetch [Google Fonts](https://fonts.google.com/). Canincrease performance as opposed to loading webfonts from Google’s external stylesheet.
 
 The site is currently live at [https://www.nikhil.live/](https://www.nikhil.live/). There clearly is a lot of work left to do.I will keep updating this article and periodically document different aspects of my progress.
-Nikhils-MacBook-Pro:blog nikhilasrani\$
