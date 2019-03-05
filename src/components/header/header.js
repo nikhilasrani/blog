@@ -1,53 +1,87 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "../header/header.css"
+import {
+  Collapse,
+  Container,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+} from "reactstrap"
 
-const Header = ({ siteTitle }) => (
-  <header className="toolbar">
-    <nav className="navbar navbar-expand-md navbar-dark mb-4">
-      <div className="container">
-        <div className="toolbar__logo navbar-brand">
-          <Link to="/">Nikhil Asrani</Link>
-        </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarMain"
+export default class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.toggleNavbar = this.toggleNavbar.bind(this)
+    this.closeNavbar = this.closeNavbar.bind(this)
+    this.state = {
+      collapsed: true,
+    }
+  }
+
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    })
+  }
+
+  closeNavbar() {
+    if (this.state.collapsed == true) {
+      this.toggleNavbar()
+    }
+  }
+
+  render() {
+    return (
+      <header className="toolbar">
+        <Navbar
+          className="navigation__navbar navbar navbar-dark mb-4"
+          light
+          expand="md"
         >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarMain">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <Link to="/blog" className="nav-link">
-                Blog
+          <Container>
+            <div className="toolbar__logo navbar-brand">
+              <Link className="nav-link navigation__navlinks" to="/">
+                Nikhil Asrani
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects" className="nav-link">
-                Projects
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+            </div>
+            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+            <Collapse isOpen={!this.state.collapsed} navbar>
+              <Nav className="ml-auto navbar-nav" navbar>
+                <NavItem className="nav-item">
+                  <Link
+                    onClick={this.closeNavbar}
+                    className="nav-link navigation__navlinks"
+                    to="/blog"
+                  >
+                    Blog
+                  </Link>
+                </NavItem>
+                <NavItem className="nav-item">
+                  <Link
+                    onClick={this.closeNavbar}
+                    className="nav-link navigation__navlinks"
+                    to="/about"
+                  >
+                    About
+                  </Link>
+                </NavItem>
+                <NavItem className="nav-item">
+                  <Link
+                    onClick={this.closeNavbar}
+                    className="nav-link navigation__navlinks"
+                    to="/projects"
+                  >
+                    Projects
+                  </Link>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Container>
+        </Navbar>
+      </header>
+    )
+  }
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
