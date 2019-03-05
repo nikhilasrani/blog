@@ -19,6 +19,7 @@ const ProjectsPage = () => (
         <h2>Projects </h2>
 
         <p>Coming Soon.</p>
+
         <p>
           Till then check out my{" "}
           <a

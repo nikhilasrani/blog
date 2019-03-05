@@ -5,29 +5,38 @@ import "../header/header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="toolbar">
-    <nav className="toolbar__navigation">
-      <div className="toolbar__logo">
-        <Link to="/">Nikhil Asrani</Link>
-      </div>
-
-      <div className="spacer" />
-      <div className="toolbar__navigation-items">
-        <ul
-          style={{
-            listStyle: "none",
-            display: "flex",
-          }}
+    <nav className="navbar navbar-expand-md navbar-dark mb-4">
+      <div className="container">
+        <div className="toolbar__logo navbar-brand">
+          <Link to="/">Nikhil Asrani</Link>
+        </div>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMain"
         >
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-        </ul>
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarMain">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link to="/blog" className="nav-link">
+                Blog
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/projects" className="nav-link">
+                Projects
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>

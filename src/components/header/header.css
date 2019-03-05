@@ -1,44 +1,18 @@
 .toolbar {
   background: rebeccapurple;
   height: 56px;
-  padding-bottom: -1rem;
 }
 
-.toolbar__navigation {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 1rem;
-}
-.toolbar__logo {
-  margin: 0.5rem;
-}
 .toolbar__logo a {
   color: white;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 1.5rem;
+}
+
+.toolbar__logo a:hover {
+  color: white;
 }
 .toolbar-navigation-items ul {
   list-style: none;
   display: flex;
-}
-.spacer {
-  flex: 1;
-}
-.toolbar-navigation-items li {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.toolbar__navigation-items a {
-  color: white;
-  text-decoration: none;
-}
-
-.toolbar__navigation-items a:hover {
-  color: orange;
-}
-.toolbar__navigation-items a:active {
-  color: orange;
 }
