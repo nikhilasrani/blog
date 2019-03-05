@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import Navbar from "react-bootstrap/Navbar"
 import Header from "./header/header"
 import "bootstrap/dist/css/bootstrap.css"
 import "./layout.css"
