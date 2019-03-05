@@ -49,7 +49,7 @@ export default class Header extends React.Component {
             </div>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse isOpen={!this.state.collapsed} navbar>
-              <Nav className="ml-auto navbar-nav" navbar>
+              <Nav className="nav-links ml-auto navbar-nav" navbar>
                 <NavItem className="nav-item">
                   <Link
                     onClick={this.closeNavbar}

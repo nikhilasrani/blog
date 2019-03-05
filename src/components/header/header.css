@@ -17,6 +17,6 @@
   display: flex;
 }
 
-.nav-item {
-  color: white;
+.nav-links {
+  background-color: rebeccapurple !important;
 }
