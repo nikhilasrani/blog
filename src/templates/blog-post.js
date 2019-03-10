@@ -3,6 +3,7 @@ import Link from "gatsby-link"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Footer from "../components/footer/footer"
+import { FaArrowLeft } from "react-icons/fa"
 export default function Template({ data }) {
   const post = data.markdownRemark
 
@@ -19,7 +20,9 @@ export default function Template({ data }) {
             height: "100%",
           }}
         >
-          <Link to="/blog">Go Back</Link>
+          <Link to="/blog">
+            <FaArrowLeft /> Go Back
+          </Link>
           <hr />
           <h2>{post.frontmatter.title}</h2>
           <h4>

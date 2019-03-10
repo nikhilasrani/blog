@@ -1,12 +1,14 @@
 import React from "react"
 import Link from "gatsby-link"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Footer from "../components/footer/footer"
 
 import { FaUserEdit, FaCalendar } from "react-icons/fa"
 
 const BlogPage = ({ data }) => (
   <Layout>
+    <SEO title="Blog" />
     <div
       className="content-wrapper"
       style={{
@@ -28,12 +30,7 @@ const BlogPage = ({ data }) => (
           </small>
           <br />
           <br />
-          <Link
-            to={post.node.frontmatter.path}
-            style={{ color: "rebeccapurple" }}
-          >
-            Read more...
-          </Link>
+          <Link to={post.node.frontmatter.path}>Read more...</Link>
           <br />
           <br />
           <hr />

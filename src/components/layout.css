@@ -630,3 +630,8 @@ pre tt:after {
 .content-content {
   flex-grow: 1;
 }
+
+a {
+  color: black;
+  text-decoration: underline;
+}

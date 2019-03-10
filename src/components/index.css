@@ -2,17 +2,15 @@ h1 {
   padding-top: 75px;
   font-size: 100px;
   text-align: center;
-  color: white;
+  color: black;
 }
 .homepage-text {
-  padding: 20px;
-  color: white;
+  padding: 22px;
+  color: black;
   text-align: center;
 }
-.social-buttons {
-  color: white;
-}
-.Header {
+
+.header {
   display: hide;
 }
 
@@ -37,7 +35,7 @@ h2 {
 .bgd-wrapper {
   margin: 0;
   padding: 0;
-  background: rebeccapurple;
+  background: white;
 }
 body,
 html {
