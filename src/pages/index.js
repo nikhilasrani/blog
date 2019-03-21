@@ -4,9 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.css"
 import { FaReact, FaJs } from "react-icons/fa"
-import Particles from "react-particles-js"
 import SocialHome from "../components/social-home/social-home"
-//"linear-gradient(to right, rgb(203, 52, 181), rgb(68, 166, 187))"
 
 const IndexPage = () => (
   <Layout

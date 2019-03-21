@@ -5,6 +5,12 @@ module.exports = {
     author: `Nikhil Asrani`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-136692219-1",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     "gatsby-transformer-remark",
     "gatsby-plugin-catch-links",

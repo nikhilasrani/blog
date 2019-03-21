@@ -26,7 +26,7 @@ export default function Template({ data }) {
           <hr />
           <h2>{post.frontmatter.title}</h2>
           <h4>
-            Posted by{post.frontmatter.author} on {post.frontmatter.date}
+            Posted by {post.frontmatter.author} on {post.frontmatter.date}
           </h4>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>

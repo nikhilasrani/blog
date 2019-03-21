@@ -19,5 +19,7 @@
 
 .nav-links {
   background-color: black !important;
+}
+.nav-links a {
   text-decoration: none !important;
 }

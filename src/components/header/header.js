@@ -28,7 +28,7 @@ export default class Header extends React.Component {
   }
 
   closeNavbar() {
-    if (this.state.collapsed == true) {
+    if (this.state.collapsed === true) {
       this.toggleNavbar()
     }
   }
