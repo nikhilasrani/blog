@@ -47,7 +47,7 @@ const Footer = () => (
     </div>
     © {new Date().getFullYear()}
     {` `}
-    <a href="https://github.com/nikhilasrani">Nikhil Asrani</a>
+    Nikhil Asrani
   </div>
 )
 

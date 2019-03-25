@@ -47,12 +47,10 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Nunito`,
-            subsets: [`latin`],
+            family: `Playfair Display SC`,
           },
           {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
+            family: `Lato`,
           },
         ],
       },

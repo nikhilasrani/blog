@@ -21,5 +21,9 @@
 .footer-social-links-container a {
   display: inline-block;
   padding: 0 20px;
+  color: #d3d3d3;
+  font-size: 1.5em;
+}
+.footer-social-links-container a:hover {
   color: black;
 }
