@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Footer from "../components/footer/footer"
 import { FaArrowLeft } from "react-icons/fa"
+import "./blog-post.css"
 export default function Template({ data }) {
   const post = data.markdownRemark
 
@@ -20,11 +21,11 @@ export default function Template({ data }) {
             height: "100%",
           }}
         >
-          <Link to="/blog">
+          <Link to="/blog" className="go-back">
             <FaArrowLeft /> Go Back
           </Link>
-          <hr />
-          <h2>{post.frontmatter.title}</h2>
+
+          <h3 class="blog-title">{post.frontmatter.title}</h3>
           <h4>
             Posted by {post.frontmatter.author} on {post.frontmatter.date}
           </h4>

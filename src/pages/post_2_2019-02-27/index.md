@@ -1,6 +1,6 @@
 ---
 path: "blog-two"
-date: "2019-02-27"
+date: "Feb 27 2019"
 title: "Portfolio v2.0 with React and Gatsby (with in-site blog functionality!)"
 author: "Nikhil Asrani"
 ---

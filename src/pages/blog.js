@@ -4,8 +4,8 @@ import Link from "gatsby-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer/footer"
-
-import { FaUserEdit, FaCalendar } from "react-icons/fa"
+import "./blog.css"
+import headshot from "../images/nikhilasrani.png"
 
 const BlogPage = ({ data }) => (
   <Layout>
@@ -20,21 +20,23 @@ const BlogPage = ({ data }) => (
         height: "100%",
       }}
     >
-      <h2>Latest Posts </h2>
+      <h2>Blog posts </h2>
       {data.allMarkdownRemark.edges.map(post => (
-        <div key={post.node.id}>
+        <div key={post.node.id} className="blog-post-list-item">
           <h3>{post.node.frontmatter.title}</h3>
-          <small>
-            Posted by <FaUserEdit />
-            {post.node.frontmatter.author} on <FaCalendar />
-            {post.node.frontmatter.date}
-          </small>
+          <span className="post-avatar-date">
+            <img src={headshot} alt="headshot of me" className="headshot" />{" "}
+            <p>
+              {post.node.frontmatter.author} on {post.node.frontmatter.date}
+            </p>
+          </span>
           <br />
           <br />
-          <Link to={post.node.frontmatter.path}>Read more...</Link>
+          <Link className="read-more" to={post.node.frontmatter.path}>
+            Read More
+          </Link>
           <br />
           <br />
-          <hr />
         </div>
       ))}
     </div>

@@ -1,6 +1,6 @@
 ---
 path: "blog-one"
-date: "2019-02-11"
+date: "Feb 11 2019"
 title: "Where I have been and what have I been upto?"
 author: "Nikhil Asrani"
 ---
