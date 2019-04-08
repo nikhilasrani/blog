@@ -1,18 +1,16 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.css"
 import { FaReact, FaJs } from "react-icons/fa"
 import SocialHome from "../components/social-home/social-home"
-
 const IndexPage = () => (
   <Layout
     style={{
       height: "100%",
       position: "absolute",
       padding: 0,
-      background: "purple",
     }}
   >
     <div className="bgd-wrapper">
@@ -23,7 +21,6 @@ const IndexPage = () => (
       <h1>Nikhil Asrani</h1>
       <SocialHome />
       <p className="homepage-text">
-        I really like to code. Especially with{" "}
         <u>
           <a
             href="https://reactjs.org/docs/getting-started.html"
@@ -34,7 +31,7 @@ const IndexPage = () => (
             React
           </a>
         </u>{" "}
-        and{" "}
+        |{" "}
         <u>
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -42,9 +39,13 @@ const IndexPage = () => (
             rel="noopener noreferrer"
           >
             <FaJs className="js-icon" />
-            Javascript.
+            Javascript
           </a>
         </u>
+      </p>
+      <p className="homepage-text">
+        <Link to="/blog">Blog</Link> | <Link to="/about">About</Link> |{" "}
+        <Link to="/projects">Projects</Link>
       </p>
     </div>
   </Layout>

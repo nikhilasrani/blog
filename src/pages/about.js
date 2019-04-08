@@ -4,9 +4,10 @@ import SEO from "../components/seo"
 import Footer from "../components/footer/footer"
 import headshot from "../images/nikhilasrani.png"
 import "./about.css"
-
+import Header from "../components/header/header"
 const AboutPage = () => (
   <Layout>
+    <Header />
     <div
       className="content-wrapper"
       style={{
@@ -18,6 +19,7 @@ const AboutPage = () => (
       }}
     >
       <SEO title="About Me" />
+
       <div className="intro section" id="intro">
         <h2>About Me </h2>
         <div class="row">

@@ -2,12 +2,49 @@ h1 {
   padding-top: 75px;
   font-size: 100px;
   text-align: center;
-  color: black;
+  color: white;
+  backface-visibility: hidden;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 .homepage-text {
   padding: 22px;
-  color: black;
+  color: white;
   text-align: center;
+  backface-visibility: hidden;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .header {
@@ -21,12 +58,22 @@ h2 {
 .react-icon {
   color: #61dbfb;
 }
+.react-icon:hover {
+  color: #fff;
+}
 .js-icon {
   color: #f0db4f;
+}
+.js-icon:hover {
+  color: #fff;
 }
 
 .homepage-text a {
   color: inherit;
+}
+.homepage-text a:hover {
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 .homepage-text {
@@ -34,8 +81,18 @@ h2 {
 }
 .bgd-wrapper {
   margin: 0;
-  padding: 0;
-  background: white;
+  padding: 0px;
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.99),
+      rgba(17, 19, 18, 0.877)
+    ),
+    url(../../../../../Downloads/Bangalore_large.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 body,
 html {

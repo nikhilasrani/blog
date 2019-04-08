@@ -17,19 +17,19 @@
 }
 
 .social-button {
-  color: black;
+  color: white;
 }
 .github-button:hover {
-  color: #333;
+  color: #333 !important;
 }
 .twitter-button:hover {
-  color: #1da1f2;
+  color: #1da1f2 !important;
 }
 .linkedin-button:hover {
-  color: #0077b5;
+  color: #0077b5 !important;
 }
 .medium-button:hover {
-  color: #00ab6c;
+  color: #00ab6c !important;
 }
 
 .social-button:hover {

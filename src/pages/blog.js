@@ -6,10 +6,11 @@ import SEO from "../components/seo"
 import Footer from "../components/footer/footer"
 import "./blog.css"
 import headshot from "../images/nikhilasrani.png"
-
+import Header from "../components/header/header"
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
+    <Header />
     <div
       className="content-wrapper"
       style={{

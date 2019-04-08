@@ -5,11 +5,13 @@ import Layout from "../components/layout"
 import Footer from "../components/footer/footer"
 import { FaArrowLeft } from "react-icons/fa"
 import "./blog-post.css"
+import Header from "../components/header/header"
 export default function Template({ data }) {
   const post = data.markdownRemark
 
   return (
     <Layout>
+      <Header />
       <div className="container">
         <div
           className="content-wrapper"

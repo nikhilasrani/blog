@@ -45,9 +45,11 @@ const Footer = () => (
         </li>
       </ul>
     </div>
-    © {new Date().getFullYear()}
-    {` `}
-    Nikhil Asrani
+    <div className="footer-name">
+      © {new Date().getFullYear()}
+      {` `}
+      Nikhil Asrani
+    </div>
   </div>
 )
 
