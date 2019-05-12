@@ -44,7 +44,7 @@ export default class Header extends React.Component {
           <Container>
             <div className="toolbar__logo navbar-brand">
               <Link className="nav-link navigation__navlinks" to="/">
-                &lt;Nikhil {"   "}/&gt;
+                Nikhil {"   "}Asrani
               </Link>
             </div>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />

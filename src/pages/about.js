@@ -7,7 +7,7 @@ import "./about.css"
 import Header from "../components/header/header"
 const AboutPage = () => (
   <Layout>
-    <Header />
+    <Header style={{zIndex:3}}/>
     <div
       className="content-wrapper"
       style={{
@@ -16,14 +16,15 @@ const AboutPage = () => (
         padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
         height: "100%",
+        zIndex:-1
       }}
     >
       <SEO title="About Me" />
 
       <div className="intro section" id="intro">
         <h2>About Me </h2>
-        <div class="row">
-          <div class="col-sm-3">
+        <div className="row">
+          <div className="col-sm-3">
             <img
               src={headshot}
               alt="headshot of me"
@@ -31,7 +32,7 @@ const AboutPage = () => (
               style={{ borderRadius: "50%", height: "150px", width: "150px" }}
             />
           </div>
-          <div class="col-sm-9">
+          <div className="col-sm-9">
             <p>
               I'm a 24 year old Bangalorean. I enjoy working on the latest Front
               End Technologies. I was previously working in an Operations role
@@ -58,14 +59,14 @@ const AboutPage = () => (
         </div>
       </div>
       {/** Work Experience */}
-      <div class="work section second" id="experiences">
-        <div class="container">
+      <div className="work section second" id="experiences">
+        <div className="container">
           <h3>
             Work
             <br />
             Experience
           </h3>
-          <ul class="work-list">
+          <ul className="work-list">
             <li className="tenure">November 2018 - Present</li>
             <li>
               <a
@@ -81,7 +82,7 @@ const AboutPage = () => (
               libraries
             </li>
           </ul>
-          <ul class="work-list">
+          <ul className="work-list">
             <li className="tenure">June 2017 - October 2018</li>
             <li>
               <a
@@ -102,7 +103,7 @@ const AboutPage = () => (
               technical issues.
             </li>
           </ul>
-          <ul class="work-list">
+          <ul className="work-list">
             <li className="tenure">January 2017 - April 2017</li>
             <li>
               <a
@@ -122,22 +123,22 @@ const AboutPage = () => (
           </ul>
         </div>
       </div>
-      <div class="skills section second" id="skills">
-        <div class="container">
+      <div className="skills section second" id="skills">
+        <div className="container">
           <h3>
             Technical
             <br />
             Skills
           </h3>
-          <ul class="skill-list list-flat">
+          <ul className="skill-list list-flat">
             <li>Web Technologies</li>
             <li>HTML / CSS Flexbox / CSS Grid</li>
           </ul>
-          <ul class="skill-list list-flat">
+          <ul className="skill-list list-flat">
             <li>Libraries</li>
             <li>React / React Native / Bootstrap / Semantic UI</li>
           </ul>
-          <ul class="skill-list list-flat">
+          <ul className="skill-list list-flat">
             <li>Programming</li>
             <li>Javascript</li>
           </ul>
@@ -145,18 +146,18 @@ const AboutPage = () => (
       </div>
 
       {/** Achievements */}
-      <div class="award section second" id="achievements">
-        <div class="container">
+      <div className="award section second" id="achievements">
+        <div className="container">
           <h3>
             Award &amp;
             <br />
             Achievements
           </h3>
-          <ul class="award-list list-flat">
+          <ul className="award-list list-flat">
             <li>August 2018</li>
             <li>Accenture Technology Core Values Award FY18</li>
           </ul>
-          <ul class="award-list list-flat">
+          <ul className="award-list list-flat">
             <li>July 2018</li>
             <li>Accenture Technology Delivering Outcomes Award FY18</li>
             <li>Accenture Technology Inspire GEM Award - July 2018</li>
@@ -164,14 +165,14 @@ const AboutPage = () => (
         </div>
       </div>
       {/** Hobbies */}
-      <div class="hobbies section second" id="hobbies">
-        <div class="container">
+      <div className="hobbies section second" id="hobbies">
+        <div className="container">
           <h3>
             Hobbies &amp;
             <br />
             Interests
           </h3>
-          <ul class="hobbies-list">
+          <ul className="hobbies-list">
             <li className="tenure">August 2016 - October 2016</li>
             <li>
               <a
@@ -187,7 +188,7 @@ const AboutPage = () => (
               and governance.
             </li>
           </ul>
-          <ul class="hobbies-list">
+          <ul className="hobbies-list">
             <li className="tenure">August 2014 - October 2016</li>
             <li>
               <a
@@ -233,7 +234,7 @@ const AboutPage = () => (
               •Novice-Semi-Finalist at SMC Parliamentary Debate 2015
             </li>
           </ul>
-          <ul class="hobbies-list">
+          <ul className="hobbies-list">
             <li className="tenure">June 2011 - July 2012</li>
             <li>
               <a
