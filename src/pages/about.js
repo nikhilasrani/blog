@@ -7,7 +7,8 @@ import "./about.css"
 import Header from "../components/header/header"
 const AboutPage = () => (
   <Layout>
-    <Header style={{zIndex:3}}/>
+      <Header style={{zIndex:3 }}/>
+      <div>
     <div
       className="content-wrapper"
       style={{
@@ -16,7 +17,9 @@ const AboutPage = () => (
         padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
         height: "100%",
-        zIndex:-1
+        position:"relative",
+        zIndex:0,
+        
       }}
     >
       <SEO title="About Me" />
@@ -276,6 +279,7 @@ const AboutPage = () => (
           </ul>
         </div>
       </div>
+    </div>
     </div>
     <Footer />
   </Layout>

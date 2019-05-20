@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => (
         padding: `0px 1.0875rem 1.45rem`,
         paddingTop: 0,
         height: "100%",
-        zIndex:-1
+        zIndex:0
       }}
     >
       <h2>Blog posts </h2>
