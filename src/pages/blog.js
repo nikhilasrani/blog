@@ -10,7 +10,9 @@ import Header from "../components/header/header"
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
-    <Header style={{zIndex:3}} />
+    <div style={{zIndex:3}}>
+    <Header  />
+    </div>
     <div
       className="content-wrapper"
       style={{

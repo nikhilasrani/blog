@@ -7,7 +7,9 @@ import "./about.css"
 import Header from "../components/header/header"
 const AboutPage = () => (
   <Layout>
-      <Header style={{zIndex:3 }}/>
+    <div style={{zIndex:3 }}>
+    <Header />
+    </div>
       <div>
     <div
       className="content-wrapper"

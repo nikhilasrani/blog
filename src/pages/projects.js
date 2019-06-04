@@ -7,7 +7,9 @@ import Footer from "../components/footer/footer"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
-    <Header style={{zIndex:3}}/>
+    <div style={{zIndex:3}}>
+    <Header />
+    </div>
     <div
       className="content-wrapper"
       style={{
