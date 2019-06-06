@@ -48,6 +48,18 @@ const IndexPage = () => (
         <Link to="/projects">Projects</Link>
       </p>
     </div>
+    <div><h2>Projects</h2>
+    <ul>
+    <li>Backlog</li>
+      <li>Thinder</li>
+      <li> More...</li>
+      </ul></div>
+      <div><h2>Skills</h2>
+      <ul>
+    <li>Javascript</li>
+      <li>React</li>
+      <li> React Native</li>
+      </ul></div>
   </Layout>
 )
 
