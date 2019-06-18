@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
+import Project from "../components/Project/Project"
+import ThinderPortfolio from "../images/Thinder_Portfolio.png"
 
 const ProjectsPage = () => (
   <Layout>
@@ -10,29 +12,12 @@ const ProjectsPage = () => (
     <div style={{zIndex:3}}>
     <Header />
     </div>
-    <div
-      className="content-wrapper"
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0px 1.0875rem 1.45rem`,
-        paddingTop: 0,
-        height: "100%",
-        zIndex:0
-      }}
-    >
+    <div>
       <div>
-        <h2>Projects </h2>
+        <h2 style={{textAlign:"center"}}>Projects </h2>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, earum
-          voluptates, praesentium dolor eligendi quibusdam, est rerum enim
-          expedita exercitationem at voluptatum dignissimos odit? Numquam
-          placeat at porro, inventore, quos incidunt sed aut laudantium corporis
-          quas possimus laborum, magnam blanditiis!
-        </p>
-        <p>
-          Till then check out my{" "}
+        <p style={{textAlign:"center"}}>
+          Here are some of my select projects. For more, you can check out my{" "}
           <a
             href="https://github.com/nikhilasrani"
             target="_blank"
@@ -42,8 +27,15 @@ const ProjectsPage = () => (
           </a>
           .
         </p>
+        
+    <Project title="Backlog" subtitle="May 2019" 
+    description="Thinder is an application that helps you decide on a place to grab a quick bite when you are feeling indecisive. After selecting your location, you will see the restaurants in and around your area and you can swipe left or right on them on whether you like them or not. Once you have a few options down, you can see them on the Saved Restaurants screen and check them out further on Zomato."
+     imageURL={ThinderPortfolio}
+     imageURLAlt="Thinder Portfolio Image"
+     />
+     <br/>
+     </div>
       </div>
-    </div>
     <Footer />
   </Layout>
 )

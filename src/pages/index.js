@@ -59,18 +59,6 @@ const IndexPage = () => (
      imageURLAlt="Thinder Portfolio Image"
      />
      </div>
-    {/* <ul>
-    <li><Project title="Backlog"/></li>
-      <li>Thinder</li>
-      <li> More...</li>
-      </ul></div>
-      <div><h2 style={{textAlign:"center"}}>Skills</h2>
-      <ul>
-    <li>Javascript</li>
-      <li>React</li>
-      <li> React Native</li>
-      </ul>
-       */}
       </div>
       <FooterHome />
   </Layout>
