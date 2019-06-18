@@ -46,9 +46,10 @@ const Footer = () => (
       </ul>
     </div>
     <div className="footer-name">
+      <p>
       © {new Date().getFullYear()}
       {` `}
-      Nikhil Asrani
+      Nikhil Asrani</p>
     </div>
   </div>
 )

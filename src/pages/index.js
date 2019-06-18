@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import "../components/index.css"
 import { FaReact, FaJs } from "react-icons/fa"
 import SocialHome from "../components/social-home/social-home"
+import FooterHome from "../components/footer-home/footer-home";
 const IndexPage = () => (
   <Layout
     style={{
@@ -48,18 +49,19 @@ const IndexPage = () => (
         <Link to="/projects">Projects</Link>
       </p>
     </div>
-    <div><h2>Projects</h2>
+    <div><h2 style={{textAlign:"center"}}>Projects</h2>
     <ul>
     <li>Backlog</li>
       <li>Thinder</li>
       <li> More...</li>
       </ul></div>
-      <div><h2>Skills</h2>
+      <div><h2 style={{textAlign:"center"}}>Skills</h2>
       <ul>
     <li>Javascript</li>
       <li>React</li>
       <li> React Native</li>
       </ul></div>
+      <FooterHome />
   </Layout>
 )
 
