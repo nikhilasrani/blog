@@ -52,8 +52,8 @@ const IndexPage = () => (
       </p>
     </div>
     <div><h2 style={{textAlign:"center"}}>Projects</h2>
-    <div className="projects">
-    <Project title="Backlog" subtitle="May 2019" 
+    <div className="projects" style={{position: "relative",clear: "both", display:"block", lineHeight:40}}>
+    <Project title="Thinder" subtitle="May 2019" 
     description="Thinder is an application that helps you decide on a place to grab a quick bite when you are feeling indecisive. After selecting your location, you will see the restaurants in and around your area and you can swipe left or right on them on whether you like them or not. Once you have a few options down, you can see them on the Saved Restaurants screen and check them out further on Zomato."
      imageURL={ThinderPortfolio}
      imageURLAlt="Thinder Portfolio Image"
