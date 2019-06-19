@@ -8,6 +8,7 @@ import SocialHome from "../components/social-home/social-home"
 import FooterHome from "../components/footer-home/footer-home"
 import Project from "../components/Project/Project"
 import ThinderPortfolio from "../images/Thinder_Portfolio.png"
+import PortfolioPage from "../images/Portfolio_Page.png"
 const IndexPage = () => (
   <Layout
     style={{
@@ -24,29 +25,6 @@ const IndexPage = () => (
       <h1>Nikhil Asrani</h1>
       <SocialHome />
       <p className="homepage-text">
-        <u>
-          <a
-            href="https://reactjs.org/docs/getting-started.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaReact className="react-icon" />
-            React
-          </a>
-        </u>{" "}
-        |{" "}
-        <u>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaJs className="js-icon" />
-            Javascript
-          </a>
-        </u>
-      </p>
-      <p className="homepage-text">
         <Link to="/blog">Blog</Link> | <Link to="/about">About</Link> |{" "}
         <Link to="/projects">Projects</Link>
       </p>
@@ -57,6 +35,12 @@ const IndexPage = () => (
     description="Thinder is an application that helps you decide on a place to grab a quick bite when you are feeling indecisive. After selecting your location, you will see the restaurants in and around your area and you can swipe left or right on them on whether you like them or not. Once you have a few options down, you can see them on the Saved Restaurants screen and check them out further on Zomato."
      imageURL={ThinderPortfolio}
      imageURLAlt="Thinder Portfolio Image"
+     />
+     <Project title="Portfolio Site" subtitle="March 2019" 
+    description="This page that you are currently browsing! 
+    This was built using the Gatsby framework which allows for blazing fast response times. It is built using React and GraphQL."
+     imageURL={PortfolioPage}
+     imageURLAlt="Portfolio Page Image"
      />
      </div>
       </div>

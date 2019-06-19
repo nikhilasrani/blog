@@ -5,7 +5,7 @@ import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import Project from "../components/Project/Project"
 import ThinderPortfolio from "../images/Thinder_Portfolio.png"
-
+import PortfolioPage from "../images/Portfolio_Page.png"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
@@ -32,6 +32,12 @@ const ProjectsPage = () => (
     description="Thinder is an application that helps you decide on a place to grab a quick bite when you are feeling indecisive. After selecting your location, you will see the restaurants in and around your area and you can swipe left or right on them on whether you like them or not. Once you have a few options down, you can see them on the Saved Restaurants screen and check them out further on Zomato."
      imageURL={ThinderPortfolio}
      imageURLAlt="Thinder Portfolio Image"
+     />
+     <Project title="Portfolio Site" subtitle="March 2019" 
+    description="This page that you are currently browsing! 
+    This was built using the Gatsby framework which allows for blazing fast response times. It is built using React and GraphQL."
+     imageURL={PortfolioPage}
+     imageURLAlt="Portfolio Page Image"
      />
      <br/>
      </div>
