@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.css"
-import { FaReact, FaJs } from "react-icons/fa"
 import SocialHome from "../components/social-home/social-home"
 import FooterHome from "../components/footer-home/footer-home"
 import Project from "../components/Project/Project"
@@ -19,8 +18,8 @@ const IndexPage = () => (
   >
     <div className="bgd-wrapper">
       <SEO
-        title="Nikhil Asrani | Front End Developer"
-        keywords={[`nikhil`, `dev`, `react`, "react-native", "javascript"]}
+       // title="Nikhil Asrani | Front End Developer"
+        keywords={[`nikhil`, `dev`, `react`, `react-native`, `javascript`]}
       />
       <h1>Nikhil Asrani</h1>
       <SocialHome />
@@ -35,6 +34,8 @@ const IndexPage = () => (
     description="Thinder is an application that helps you decide on a place to grab a quick bite when you are feeling indecisive. After selecting your location, you will see the restaurants in and around your area and you can swipe left or right on them on whether you like them or not. Once you have a few options down, you can see them on the Saved Restaurants screen and check them out further on Zomato."
      imageURL={ThinderPortfolio}
      imageURLAlt="Thinder Portfolio Image"
+     android 
+     playStoreURL={"https://play.google.com/store/apps/details?id=com.nikhilasrani.thinder&hl=en"}
      />
      <Project title="Portfolio Site" subtitle="March 2019" 
     description="This page that you are currently browsing! 
