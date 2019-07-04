@@ -1,15 +1,21 @@
 import React, { Component } from "react"
 import "./Project.css"
+import { FaGithub } from "react-icons/fa"
 
 class Project extends Component {
 
   playStoreLink = () => {
-    if(this.props.android)
+    if(this.props.playStore)
      {
-       return <a href={this.props.playStoreURL}>
+       return <a href={this.props.playStore}>
          <img style={{height:60, width:150}} src={require("../../images/google-play-badge.png")} alt="Play Store Badge"/>
          </a>
  } 
+}
+githubLink = () => {
+  if(this.props.github){
+    return <a href={this.props.github}><FaGithub size={30} color="#333"/></a>
+  }
 }
   render() {
     return <div className="project w-container">
@@ -24,7 +30,7 @@ class Project extends Component {
         <p className="projecttitle">{this.props.title}</p>
         <p className="projectdates">{this.props.subtitle}</p>
         <p className="projectdescription">{this.props.description}
-        <br/><br/>{this.playStoreLink()}
+        <br/><br/>{this.playStoreLink()}{this.githubLink()}
         </p>
       </div>
      
