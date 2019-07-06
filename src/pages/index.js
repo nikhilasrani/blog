@@ -44,6 +44,7 @@ const IndexPage = () => (
      imageURL={ThinderPortfolio}
      imageURLAlt="Thinder Portfolio Image"
      playStore={"https://play.google.com/store/apps/details?id=com.nikhilasrani.thinder&hl=en"}
+     github={"https://github.com/nikhilasrani/thinder"}
      />
      <Project title="Portfolio Site" subtitle="March 2019" 
     description="This page that you are currently browsing! 
