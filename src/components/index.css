@@ -4,9 +4,14 @@ h1 {
   text-align: center;
   color: white;
   backface-visibility: hidden;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+  from {opacity:0 }
+  to   {opacity:1 }
 }
 
 @keyframes moveInLeft {
@@ -42,8 +47,8 @@ h1 {
   color: white;
   text-align: center;
   backface-visibility: hidden;
-  animation-name: moveInRight;
-  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-timing-function: ease-out;
 }
 
