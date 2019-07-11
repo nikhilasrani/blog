@@ -29,6 +29,16 @@ const IndexPage = () => (
         <Link to="/projects">Projects</Link>
       </p>
     </div>
+    <div className="about" style={{paddingBlock:50}}>
+      <h2 style={{textAlign:"center"}}>Hey, I'm Nikhil Asrani 👋</h2>
+      <p style={{textAlign:"center"}}>I'm a Frontend Developer, specialized in Javascript, particularly in ReactJS and React Native. Located in Bangalore, India. 🇮🇳 <br/>I've mostly learnt coding through self directed learning and by building some cool apps. 🚀</p>
+      <p style={{textAlign:"center"}}>
+        Feel free to email me at <a style={{color: "#8c8c8c", textDecoration:"none"}} href="mailto:asrani.nikhil@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer">asrani.nikhil@gmail.com</a> or DM me on <a  style={{color: "#8c8c8c", textDecoration:"none"}} href="https://twitter.com/NikhilBAsrani"
+              target="_blank"
+              rel="noopener noreferrer">twitter</a> after checking out my work below. 👇</p>
+    </div>
     <div><h2 style={{textAlign:"center"}}>Projects</h2>
     <div className="projects" style={{position: "relative",clear: "both", display:"block", lineHeight:40}}>
     

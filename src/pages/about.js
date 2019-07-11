@@ -39,8 +39,7 @@ const AboutPage = () => (
           </div>
           <div className="col-sm-9">
             <p>
-              I'm a 24 year old Bangalorean. I enjoy working on the latest Front
-              End Technologies. I was previously working in an Operations role
+              I'm a 24 year old Bangalorean. I enjoy working on the latest Frontend technologies. I was previously working in an Operations role
               at Accenture for their{" "}
               <a href="https://www.accenture.com/in-en/service-mywizard-intelligent-automation-platform">
                 intelligent automation platform
