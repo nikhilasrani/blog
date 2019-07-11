@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import Project from "../components/Project/Project"
-import BacklogPortfolio from "../images/Backlog_Portfolio.png"
-import ThinderPortfolio from "../images/Thinder_Portfolio.png"
-import PortfolioPage from "../images/Portfolio_Page.png"
+import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
+import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
+import PortfolioPage from "../images/Portfolio_Page.jpg"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />

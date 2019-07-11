@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer/footer"
-import headshot from "../images/nikhilasrani.png"
+import headshot from "../images/nikhilasrani.jpg"
 import "./about.css"
 import Header from "../components/header/header"
 const AboutPage = () => (

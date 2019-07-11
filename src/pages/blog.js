@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer/footer"
 import "./blog.css"
-import headshot from "../images/nikhilasrani.png"
+import headshot from "../images/nikhilasrani.jpg"
 import Header from "../components/header/header"
 const BlogPage = ({ data }) => (
   <Layout>

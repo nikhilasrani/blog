@@ -6,9 +6,9 @@ import "../components/index.css"
 import SocialHome from "../components/social-home/social-home"
 import FooterHome from "../components/footer-home/footer-home"
 import Project from "../components/Project/Project"
-import ThinderPortfolio from "../images/Thinder_Portfolio.png"
-import BacklogPortfolio from "../images/Backlog_Portfolio.png"
-import PortfolioPage from "../images/Portfolio_Page.png"
+import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
+import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
+import PortfolioPage from "../images/Portfolio_Page.jpg"
 const IndexPage = () => (
   <Layout
     style={{
