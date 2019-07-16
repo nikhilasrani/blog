@@ -17,6 +17,11 @@ githubLink = () => {
     return <a href={this.props.github}><FaGithub size={30} color="#333"/></a>
   }
 }
+demoLink = () => {
+  if(this.props.demo){
+    return <a className="demo-button" href={this.props.demo}>View Demo</a>
+  }
+}
   render() {
     return <div className="project w-container">
        <div className="projectimagebg">
@@ -30,7 +35,7 @@ githubLink = () => {
         <p className="projecttitle">{this.props.title}</p>
         <p className="projectdates">{this.props.subtitle}</p>
         <p className="projectdescription">{this.props.description}
-        <br/><br/>{this.playStoreLink()}{this.githubLink()}
+        <br/><br/>{this.playStoreLink()}{this.githubLink()}{" "}{this.demoLink()}
         </p>
       </div>
      

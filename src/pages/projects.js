@@ -7,6 +7,7 @@ import Project from "../components/Project/Project"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
 import PortfolioPage from "../images/Portfolio_Page.jpg"
+import ContactManagerPortfolio from "../images/ContactManager_Portfolio.png"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
@@ -48,8 +49,15 @@ const ProjectsPage = () => (
      imageURL={PortfolioPage}
      imageURLAlt="Portfolio Page Image"
      github={"https://github.com/nikhilasrani/blog"}
+     /><br/>
+     <Project title="Contact Manager Application" subtitle="February 2019" 
+    description="A simple CRUD application built in React that uses axios to make GET, DELETE, POST and PUT HTTP requests to a fake REST API."
+     imageURL={ContactManagerPortfolio}
+     imageURLAlt="Contact Manager Image"
+     github={"https://github.com/nikhilasrani/contactmanager"}
+     demo={"https://nikhilasrani-contactscrud.netlify.com"}
      />
-     <br/>
+     <br/><br/><br/><br/><br/>
      </div>
       </div>
     <Footer />
