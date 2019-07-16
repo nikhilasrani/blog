@@ -23,6 +23,7 @@ export default function Template({ data }) {
             height: "100%",
           }}
         >
+          <div style={{paddingTop:20}}></div>
           <Link to="/blog" className="go-back">
             <FaArrowLeft /> Go Back
           </Link>

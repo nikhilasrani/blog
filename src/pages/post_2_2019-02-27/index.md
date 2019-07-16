@@ -3,11 +3,12 @@ path: "blog-two"
 date: "Feb 27 2019"
 title: "Portfolio v2.0 with React and Gatsby (with in-site blog functionality!)"
 author: "Nikhil Asrani"
+contentpreview: "The first portfolio I made was made following some basic HTML and CSS tutorials. It did look good but the problem was that it was very simple, something that everyone could make. I had now reached a skill-level in React where I feel like I could utilise some creativity and put in some personalised effort into my site. "
 ---
 
 As an aspiring front-end web developer, It is important that I have a unique/memorable portfolio as it would be the first impression I would be creating on potential clients/companies.
 
-The first portfolio I made was made following some basic HTML and CSS tutorials. It did look good but the problem was that it was very simple, something that everyone could make. I had now reached a skill-level in React where I feel like I could utilisesome creativity and put in some personalised effort into my site. This portfolio v2.0 is a result of some of the skills I haveacquired so far.
+The first portfolio I made was made following some basic HTML and CSS tutorials. It did look good but the problem was that it was very simple, something that everyone could make. I had now reached a skill-level in React where I feel like I could utilise some creativity and put in some personalised effort into my site. This portfolio v2.0 is a result of some of the skills I have acquired so far.
 
 ### What frameworks/libraries did I use?
 

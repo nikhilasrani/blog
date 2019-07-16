@@ -3,6 +3,7 @@ path: "blog-one"
 date: "Feb 11 2019"
 title: "Where I have been and what have I been upto?"
 author: "Nikhil Asrani"
+contentpreview: "Hello Internet folks 👋. This is my first in what I hope would be a series of Medium blogs. I have recently gotten addicted to these blogs showing great DIY programming implementations and ones exploring relatable life experiences and advice and I figured I could attempt to give back in the same way (and build an online presence at the same time)."
 ---
 
 Hello Internet folks 👋. This is my first in what I hope would be a series of Medium blogs.

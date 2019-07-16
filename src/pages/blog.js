@@ -7,6 +7,7 @@ import Footer from "../components/footer/footer"
 import "./blog.css"
 import headshot from "../images/nikhilasrani.jpg"
 import Header from "../components/header/header"
+
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
@@ -28,14 +29,14 @@ const BlogPage = ({ data }) => (
       {data.allMarkdownRemark.edges.map(post => (
         <div key={post.node.id} className="blog-post-list-item">
           <h3>{post.node.frontmatter.title}</h3>
+          
           <span className="post-avatar-date">
             <img src={headshot} alt="headshot of me" className="headshot" />{" "}
             <p>
-              {post.node.frontmatter.author} on {post.node.frontmatter.date}
+              {" "}{post.node.frontmatter.author} on {post.node.frontmatter.date}
             </p>
           </span>
-          <br />
-          <br />
+          <p>{post.node.frontmatter.contentpreview}</p>
           <Link className="read-more" to={post.node.frontmatter.path}>
             Read More
           </Link>
@@ -58,6 +59,7 @@ export const PageQuery = graphql`
             title
             date
             author
+            contentpreview
           }
         }
       }
