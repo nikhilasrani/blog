@@ -7,7 +7,7 @@ import Project from "../components/Project/Project"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
 import PortfolioPage from "../images/Portfolio_Page.jpg"
-import ContactManagerPortfolio from "../images/ContactManager_Portfolio.png"
+//import ContactManagerPortfolio from "../images/ContactManager_Portfolio.png"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />

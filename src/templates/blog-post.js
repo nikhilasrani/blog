@@ -28,7 +28,7 @@ export default function Template({ data }) {
             <FaArrowLeft /> Go Back
           </Link>
 
-          <h3 class="blog-title">{post.frontmatter.title}</h3>
+          <h3 className="blog-title">{post.frontmatter.title}</h3>
           <h4>
             Posted by {post.frontmatter.author} on {post.frontmatter.date}
           </h4>

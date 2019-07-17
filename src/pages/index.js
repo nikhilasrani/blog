@@ -30,8 +30,8 @@ const IndexPage = () => (
       </p>
     </div>
     <div className="about" style={{paddingBlock:50}}>
-      <h2 style={{textAlign:"center"}}>Hey, I'm Nikhil Asrani 👋</h2>
-      <p style={{textAlign:"center"}}>I'm a Frontend Developer, specialized in Javascript, particularly in ReactJS and React Native. Located in Bangalore, India. 🇮🇳 <br/>I've mostly learnt coding through self directed learning and by building some cool apps. 🚀</p>
+      <h2 style={{textAlign:"center"}}>Hey, I'm Nikhil Asrani <span role="img" aria-label="hand wave">👋</span></h2>
+      <p style={{textAlign:"center"}}>I'm a Frontend Developer, specialized in Javascript, particularly in ReactJS and React Native. Located in Bangalore, India. <span role="img" aria-label="Indian flag">🇮🇳</span> <br/>I've mostly learnt coding through self directed learning and by building some cool apps. <span role="img" aria-label="rocket">🚀</span></p>
       <p style={{textAlign:"center"}}>
         Feel free to email me at <a style={{color: "#8c8c8c", textDecoration:"none"}} href="mailto:asrani.nikhil@gmail.com"
         target="_blank"
