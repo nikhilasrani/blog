@@ -25,7 +25,7 @@ export default function Template({ data }) {
         >
           <div style={{paddingTop:20}}></div>
           <Link to="/blog" className="go-back">
-            <FaArrowLeft /> Go Back
+            <FaArrowLeft /> Back to Blogposts
           </Link>
 
           <h3 className="blog-title">{post.frontmatter.title}</h3>

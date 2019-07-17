@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import {Link} from "gatsby"
 import "./Project.css"
 import { FaGithub } from "react-icons/fa"
 
@@ -22,6 +23,11 @@ demoLink = () => {
     return <a className="demo-button" href={this.props.demo}>View Demo</a>
   }
 }
+blogLink = () => {
+  if(this.props.blog){
+    return <Link className="demo-button" to={this.props.blog}>Read Blog</Link>
+  }
+}
   render() {
     return <div className="project w-container">
        <div className="projectimagebg">
@@ -35,7 +41,7 @@ demoLink = () => {
         <p className="projecttitle">{this.props.title}</p>
         <p className="projectdates">{this.props.subtitle}</p>
         <p className="projectdescription">{this.props.description}
-        <br/><br/>{this.playStoreLink()}{this.githubLink()}{" "}{this.demoLink()}
+        <br/><br/>{this.playStoreLink()}{this.githubLink()}{" "}{this.demoLink()}{this.blogLink()}
         </p>
       </div>
      

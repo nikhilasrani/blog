@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.css"
 import SocialHome from "../components/social-home/social-home"
-import FooterHome from "../components/footer-home/footer-home"
+import Footer from "../components/footer/footer"
 import Project from "../components/Project/Project"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
@@ -55,6 +55,7 @@ const IndexPage = () => (
      imageURLAlt="Thinder Portfolio Image"
      playStore={"https://play.google.com/store/apps/details?id=com.nikhilasrani.thinder&hl=en"}
      github={"https://github.com/nikhilasrani/thinder"}
+     blog={"/thinder-blog"}
      />
      <Project title="Portfolio Site" subtitle="March 2019" 
     description="This page that you are currently browsing! 
@@ -62,10 +63,18 @@ const IndexPage = () => (
      imageURL={PortfolioPage}
      imageURLAlt="Portfolio Page Image"
      github={"https://github.com/nikhilasrani/blog"}
+     blog={"/blog-two"}
      />
      </div>
       </div>
-      <FooterHome />
+      <div style={{textAlign:"center"}} className="contact">
+    <h2 >Get in Touch</h2>
+    <p>Connect with me for any opportunities, or just to say hello{" "}
+      <span role="img" aria-label="hand-wave">👋</span><br/>
+      <a style={{color: "#8c8c8c", textDecoration:"none"}} href="mailto:asrani.nikhil@gmail.com">asrani.nikhil@gmail.com</a>
+      </p>
+      </div>
+      <Footer />
   </Layout>
 )
 
