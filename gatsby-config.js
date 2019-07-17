@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nikhil Asrani`,
-    description: ``,
+    description: `I am a Frontend Developer based in Bangalore, India. This website is a portfolio of my work`,
     author: `Nikhil Asrani`,
   },
   plugins: [
