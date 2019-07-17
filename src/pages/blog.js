@@ -3,17 +3,12 @@ import { graphql } from "gatsby"
 import Link from "gatsby-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Footer from "../components/footer/footer"
 import "./blog.css"
 import headshot from "../images/nikhilasrani.jpg"
-import Header from "../components/header/header"
 
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
-    <div style={{zIndex:3}}>
-    <Header  />
-    </div>
     <div
       className="content-wrapper"
       style={{
@@ -45,7 +40,6 @@ const BlogPage = ({ data }) => (
         </div>
       ))}
     </div>
-    <Footer />
   </Layout>
 )
 export const PageQuery = graphql`

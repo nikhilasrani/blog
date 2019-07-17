@@ -1,10 +1,9 @@
 import React from "react"
 import "../footer/footer.css"
-import { FaGithub, FaTwitter, FaMedium, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa"
 
 const Footer = () => (
   <div className="footer-class">
-    {" "}
     <div className="footer-social-links-container">
       <ul>
         <li>
@@ -32,15 +31,6 @@ const Footer = () => (
             rel="noopener noreferrer"
           >
             <FaLinkedin />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://medium.com/@asrani.nikhil"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaMedium />
           </a>
         </li>
       </ul>

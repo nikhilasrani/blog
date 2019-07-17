@@ -1,14 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
+import {Link} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.css"
-import SocialHome from "../components/social-home/social-home"
-import Footer from "../components/footer/footer"
 import Project from "../components/Project/Project"
+import { FaReact, FaJs, FaArrowRight} from "react-icons/fa"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
 import PortfolioPage from "../images/Portfolio_Page.jpg"
+import Resume from "../documents/Resume_NikhilAsrani.pdf"
 const IndexPage = () => (
   <Layout
     style={{
@@ -22,22 +22,8 @@ const IndexPage = () => (
         title="Nikhil Asrani | Front End Developer"
         keywords={[`nikhil`, `dev`, `react`, `react-native`, `javascript`]}
       />
-      <h1>Nikhil Asrani</h1>
-      <SocialHome />
-      <p className="homepage-text">
-        <Link to="/blog">Blog</Link> | <Link to="/about">About</Link> |{" "}
-        <Link to="/projects">Projects</Link>
-      </p>
-    </div>
-    <div className="about" style={{paddingBlock:50}}>
-      <h2 style={{textAlign:"center"}}>Hey, I'm Nikhil Asrani <span role="img" aria-label="hand wave">👋</span></h2>
-      <p style={{textAlign:"center"}}>I'm a Frontend Developer, specialized in Javascript, particularly in ReactJS and React Native. Located in Bangalore, India. <span role="img" aria-label="Indian flag">🇮🇳</span> <br/>I've mostly learnt coding through self directed learning and by building some cool apps. <span role="img" aria-label="rocket">🚀</span></p>
-      <p style={{textAlign:"center"}}>
-        Feel free to email me at <a style={{color: "#8c8c8c", textDecoration:"none"}} href="mailto:asrani.nikhil@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer">asrani.nikhil@gmail.com</a> or DM me on <a  style={{color: "#8c8c8c", textDecoration:"none"}} href="https://twitter.com/NikhilBAsrani"
-              target="_blank"
-              rel="noopener noreferrer">twitter</a> after checking out my work below. 👇</p>
+          <h2 className="homepage-text" style={{ padding:30,fontSize:40,color:"white",textAlign:"center"}}>Hi, I'm Nikhil Asrani. <span role="img" aria-label="hand wave">👋</span></h2>
+          <p className="homepage-text" style={{ fontSize:20, color:"white",textAlign:"center"}}>I'm a Frontend Developer, specializing in Javascript <FaJs className="js-icon" /> and React <FaReact className="react-icon" /> . Located in Bangalore, India. <span role="img" aria-label="Indian flag">🇮🇳</span> <br/>I've mostly learnt coding through self directed learning and by building some cool apps. <span role="img" aria-label="rocket">🚀</span></p>
     </div>
     <div><h2 style={{textAlign:"center"}}>Projects</h2>
     <div className="projects" style={{position: "relative",clear: "both", display:"block", lineHeight:40}}>
@@ -67,14 +53,18 @@ const IndexPage = () => (
      />
      </div>
       </div>
+      <div style={{textAlign:"center"}}>
+      <Link to="/projects" className="styled-button">View All Projects <FaArrowRight/></Link>
+      </div>
       <div style={{textAlign:"center"}} className="contact">
     <h2 >Get in Touch</h2>
     <p>Connect with me for any opportunities, or just to say hello{" "}
       <span role="img" aria-label="hand-wave">👋</span><br/>
       <a style={{color: "#8c8c8c", textDecoration:"none"}} href="mailto:asrani.nikhil@gmail.com">asrani.nikhil@gmail.com</a>
+      <br/>
+      <a href={Resume} className="styled-button">View Resume</a>
       </p>
       </div>
-      <Footer />
   </Layout>
 )
 

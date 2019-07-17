@@ -1,8 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header/header"
-import Footer from "../components/footer/footer"
 import Project from "../components/Project/Project"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
@@ -11,9 +9,6 @@ import PortfolioPage from "../images/Portfolio_Page.jpg"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
-    <div style={{zIndex:3}}>
-    <Header />
-    </div>
     <div>
       <div>
         <h2 style={{textAlign:"center"}}>Projects </h2>
@@ -60,7 +55,6 @@ const ProjectsPage = () => (
      <br/><br/><br/><br/><br/> */}
      </div>
       </div>
-    <Footer />
   </Layout>
 )
 export default ProjectsPage

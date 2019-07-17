@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 import "./layout.css"
+import Header from "./header/header";
+import Footer from "./footer/footer";
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -16,7 +18,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className="background-fully">
-        <main className="content">{children}</main>
+        <main className="content">
+        <div style={{zIndex:2 }}>
+    <Header />
+    </div>{children}<Footer/></main>
       </div>
     )}
   />

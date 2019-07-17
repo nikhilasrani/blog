@@ -1,15 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Footer from "../components/footer/footer"
 import headshot from "../images/nikhilasrani.jpg"
 import "./about.css"
-import Header from "../components/header/header"
 const AboutPage = () => (
   <Layout>
-    <div style={{zIndex:3 }}>
-    <Header />
-    </div>
       <div>
     <div
       className="content-wrapper"
@@ -282,7 +277,6 @@ const AboutPage = () => (
       </div>
     </div>
     </div>
-    <Footer />
   </Layout>
 )
 export default AboutPage
