@@ -1,6 +1,6 @@
 import React from "react"
 import "../footer/footer.css"
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaTwitter, FaLinkedin, FaDribbble} from "react-icons/fa"
 
 const Footer = () => (
   <div className="footer-class">
@@ -31,6 +31,15 @@ const Footer = () => (
             rel="noopener noreferrer"
           >
             <FaLinkedin />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://dribbble.com/nikhilasrani"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaDribbble />
           </a>
         </li>
       </ul>
