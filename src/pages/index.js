@@ -33,6 +33,7 @@ const IndexPage = () => (
     imageURLAlt="Remedico Portfolio Image"
     description="I currently work as a Frontend/Mobile Engineer at Remedico. Remedico is an end-to-end mobile healthcare company, allowing young people to solve their critical health problems, as they move through adolescence and early adulthood."
     playStore={"https://play.google.com/store/apps/details?id=com.remedicoapp"}
+    appStore={"https://apps.apple.com/in/app/remedico/id1478936836"}
     />
     <Project title="Backlog" subtitle="June 2019" 
     description="Backlog is an application that allows you to save URLs or links that you want to refer back to later. It stores all kinds of URLs and displays them as cards containing information related to that link. Once you add a link using the Add button in the navigation bar, the link and its data gets stored in the applications cloud based servers. Everytime you open the application on the same or any different device logged onto your unique account, you will be able to see your saved links."

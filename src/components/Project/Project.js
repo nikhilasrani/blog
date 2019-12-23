@@ -13,6 +13,13 @@ class Project extends Component {
          </a>
  } 
 }
+
+appStoreLink = () => {
+  if(this.props.appStore){
+    return <a href={this.props.appStore}>
+      <img style={{height:40, width:140}} src={require("../../images/app-store-badge.png")} alt="App Store Badge"/>
+    </a>
+  }}
 githubLink = () => {
   if(this.props.github){
     return <a href={this.props.github}><FaGithub size={30} color="#333"/></a>
@@ -41,7 +48,7 @@ blogLink = () => {
         <p className="projecttitle">{this.props.title}</p>
         <p className="projectdates">{this.props.subtitle}</p>
         <p className="projectdescription">{this.props.description}
-        <br/><br/>{this.playStoreLink()}{this.githubLink()}{" "}{this.demoLink()}{this.blogLink()}
+        <br/><br/>{this.appStoreLink()}{this.playStoreLink()}{this.githubLink()}{" "}{this.demoLink()}{this.blogLink()}
         </p>
       </div>
      
