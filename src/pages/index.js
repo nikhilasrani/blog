@@ -9,7 +9,7 @@ import RemedicoPortfolio from "../images/remedico_logo_banner.png"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
 import PortfolioPage from "../images/Portfolio_Page.jpg"
-import Resume from "../documents/resume.pdf"
+// import Resume from "../documents/resume.pdf"
 const IndexPage = () => (
   <Layout
     style={{
@@ -31,7 +31,7 @@ const IndexPage = () => (
     <Project title="Remedico" subtitle="July 2019 - Present"
     imageURL={RemedicoPortfolio}
     imageURLAlt="Remedico Portfolio Image"
-    description="I currently work as a Frontend/Mobile Engineer at Remedico. Remedico is an end-to-end mobile healthcare company, allowing young people to solve their critical health problems, as they move through adolescence and early adulthood."
+    description="I currently work as a Frontend/Mobile Engineer at Remedico. Remedico is an  early stage startup and an end-to-end mobile healthcare company, allowing young people to solve their critical health problems, as they move through adolescence and early adulthood. I am one of two Frontend/App engineers where we built the end to end app experience from scratch using cross-platform hybrid app development frameworks/libraries like React Native and corresponding iOS/Android Native integrations. "
     playStore={"https://play.google.com/store/apps/details?id=com.remedicoapp"}
     appStore={"https://apps.apple.com/in/app/remedico/id1478936836"}
     />
@@ -69,7 +69,7 @@ const IndexPage = () => (
       <span role="img" aria-label="hand-wave">👋</span><br/>
       <a style={{color: "#8c8c8c", textDecoration:"none"}} href="mailto:asrani.nikhil@gmail.com">asrani.nikhil@gmail.com</a>
       <br/>
-      <a href={Resume} className="styled-button">View Resume</a>
+      {/* <a href={Resume} className="styled-button">View Resume</a> */}
       </p>
       </div>
   </Layout>
