@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import "../components/index.css"
 import Project from "../components/Project/Project"
 import { FaReact, FaJs, FaArrowRight} from "react-icons/fa"
+import RemedicoPortfolio from "../images/remedico_logo_banner.png"
 import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
 import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
 import PortfolioPage from "../images/Portfolio_Page.jpg"
@@ -27,7 +28,12 @@ const IndexPage = () => (
     </div>
     <div><h2 style={{textAlign:"center"}}>Projects</h2>
     <div className="projects" style={{position: "relative",clear: "both", display:"block", lineHeight:40}}>
-    
+    <Project title="Remedico" subtitle="July 2019 - Present"
+    imageURL={RemedicoPortfolio}
+    imageURLAlt="Remedico Portfolio Image"
+    description="I currently work as a Frontend/Mobile Engineer at Remedico. Remedico is an end-to-end mobile healthcare company, allowing young people to solve their critical health problems, as they move through adolescence and early adulthood."
+    playStore={"https://play.google.com/store/apps/details?id=com.remedicoapp"}
+    />
     <Project title="Backlog" subtitle="June 2019" 
     description="Backlog is an application that allows you to save URLs or links that you want to refer back to later. It stores all kinds of URLs and displays them as cards containing information related to that link. Once you add a link using the Add button in the navigation bar, the link and its data gets stored in the applications cloud based servers. Everytime you open the application on the same or any different device logged onto your unique account, you will be able to see your saved links."
      imageURL={BacklogPortfolio}
