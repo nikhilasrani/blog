@@ -66,7 +66,18 @@ const AboutPage = () => (
             Experience
           </h3>
           <ul className="work-list">
-            <li className="tenure">November 2018 - Present</li>
+            <li className="tenure">July 2019 - Present</li>
+            <li>
+              <a
+                href="https://remedicohealth.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Remedico</a>
+            </li>
+            <li>
+              Working as a Front End/ Hybrid Mobile Engineer building the cross platform (iOS and Android) applications and building the frontend web experiences (Web App and Landing Pages). 
+            </li>
+            <li className="tenure">November 2018 - June 2019</li>
             <li>
               <a
                 href="https://github.com/nikhilasrani"
@@ -139,7 +150,7 @@ const AboutPage = () => (
           </ul>
           <ul className="skill-list list-flat">
             <li>Programming</li>
-            <li>Javascript</li>
+            <li>JavaScript</li>
           </ul>
         </div>
       </div>
