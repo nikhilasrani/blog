@@ -4,9 +4,6 @@ import { Global, css } from "@emotion/core"
 import { useTheme } from "emotion-theming"
 import Context from "../store/context"
 
-import { StaticQuery, graphql } from "gatsby"
-// import "bootstrap/dist/css/bootstrap.css"
-// import "./layout.css"
 import Header from "./header/header"
 import Footer from "./footer/footer"
 
@@ -28,54 +25,19 @@ const Layout = ({ children }) => {
                 state.isDark ? theme.dark.background : theme.light.background
               }
             }
+            h1,h2,h3,h4,h5,h6{
+              font-family:${state.isDark ? "Karla" : "Space Mono"};
+            }
+            p {
+              font-family: 'Rubik'
+            }
 `}
       />
+      <Header />
       {children}
+      <Footer />
     </div>
   )
-  //   return (
-  //     <StaticQuery
-  //       query={graphql`
-  //         query SiteTitleQuery {
-  //           site {
-  //             siteMetadata {
-  //               title
-  //             }
-  //           }
-  //         }
-  //       `}
-  //       render={data => (
-  //         <div>
-  //           <Global
-  //             styles={css`
-  //                     * {
-  //                       box-sizing: border-box;
-  //                       margin:0,
-  //                       padding:0;
-  //                     }
-  //                     body {
-  //                       background-color: ${
-  //                         state.isDark
-  //                           ? theme.dark.background
-  //                           : theme.light.background
-  //                       }
-  //                     }
-  // `}
-  //           >
-  //             <div className="background-fully">
-  //               <main className="content">
-  //                 <div style={{ zIndex: 2 }}>
-  //                   <Header />
-  //                 </div>
-  //                 {children}
-  //                 <Footer />
-  //               </main>
-  //             </div>
-  //           </Global>
-  //         </div>
-  //       )}
-  //     />
-  //   )
 }
 
 Layout.propTypes = {

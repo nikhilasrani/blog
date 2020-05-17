@@ -48,10 +48,22 @@ module.exports = {
       options: {
         fonts: [
           {
+            family: `Karla`,
+          },
+          {
+            family: `Rubik`,
+          },
+          {
+            family: `Space Mono`,
+          },
+          {
             family: `Playfair Display SC`,
           },
           {
             family: `Lato`,
+          },
+          {
+            family: `Inconsolata`,
           },
         ],
       },

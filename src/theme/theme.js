@@ -4,7 +4,7 @@ export const theme = {
     background: "white",
   },
   dark: {
-    font: "white",
-    background: "black",
+    font: "rgba(255,255,255,0.87)",
+    background: "#222222",
   },
 }
