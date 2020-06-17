@@ -3,16 +3,14 @@ import PropTypes from "prop-types"
 import { Global, css } from "@emotion/core"
 import { useTheme } from "emotion-theming"
 import Context from "../store/context"
-
-import Header from "./header/header"
-import Footer from "./footer/footer"
+import "./layout.css"
 
 const Layout = ({ children }) => {
   const { state } = useContext(Context)
   const theme = useTheme()
 
   return (
-    <div>
+    <main>
       <Global
         styles={css`
             * {
@@ -26,17 +24,16 @@ const Layout = ({ children }) => {
               }
             }
             h1,h2,h3,h4,h5,h6{
-              font-family:${state.isDark ? "Karla" : "Space Mono"};
+              font-family: "Montserrat";
+              font-weight: 'bold';
             }
             p {
-              font-family: 'Rubik'
+              font-family: 'Source Sans Pro'
             }
 `}
       />
-      <Header />
       {children}
-      <Footer />
-    </div>
+    </main>
   )
 }
 

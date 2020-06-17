@@ -18,20 +18,30 @@ const Header = () => {
   }
 
   return (
-    <header className="header">
-      <Link to="/" className="logo">
+    <header
+      css={css`
+        header,
+        header ul {
+          background-color: ${state.isDark
+            ? theme.dark.background
+            : theme.light.background};
+        }
+      `}
+      className="header"
+    >
+      {/* <Link to="/" className="logo">
         Nikhil Asrani
       </Link>
       <input className="menu-btn" type="checkbox" id="menu-btn" />
       <label className="menu-icon" for="menu-btn">
         <span className="navicon" />
-      </label>
+      </label> */}
       <Switch
         isOn={state.isDark}
         onColor="#EF476F"
         handleToggle={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
       />
-      <ul className="menu">
+      {/* <ul className="menu">
         <li>
           <Link to="/about">About</Link>
         </li>
@@ -41,7 +51,7 @@ const Header = () => {
         <li>
           <Link to="/blog">Blog</Link>
         </li>
-      </ul>
+      </ul> */}
     </header>
     // <header style={{ height: 100, backgroundColor: "green" }}>
     //   <div className="logo">
