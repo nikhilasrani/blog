@@ -1,6 +1,5 @@
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   font-size: 36px;
   margin-top: 40px;
 }
@@ -22,7 +21,7 @@ p {
   justify-content: center;
   margin-top: 80px;
 }
-#social-links img {
+#social-links a {
   height: 24px;
   width: 24px;
   margin-right: 16px;

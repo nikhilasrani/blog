@@ -4,11 +4,9 @@ import { css } from "@emotion/core"
 import { useTheme } from "emotion-theming"
 import Context from "../store/context"
 import Layout from "../components/layout"
-// import Switch from "../components/Switch/Switch"
+import Switch from "../components/Switch/Switch"
 import SEO from "../components/seo"
 import "./index.css"
-// import "../components/index.css"
-// import Project from "../components/Project/Project"
 import {
   FaGithub,
   FaLinkedin,
@@ -16,14 +14,9 @@ import {
   FaDribbble,
   FaStackOverflow,
 } from "react-icons/fa"
-// import RemedicoPortfolio from "../images/remedico_logo_banner.png"
-// import ThinderPortfolio from "../images/Thinder_Portfolio.jpg"
-// import BacklogPortfolio from "../images/Backlog_Portfolio.jpg"
-// import PortfolioPage from "../images/Portfolio_Page.jpg"
-// // import Resume from "../documents/resume.pdf"
 
 const IndexPage = () => {
-  const { state } = useContext(Context)
+  const { state, dispatch } = useContext(Context)
   const theme = useTheme()
 
   return (
@@ -35,8 +28,16 @@ const IndexPage = () => {
           p {
             color: ${state.isDark ? theme.dark.font : theme.light.font};
           }
+          a {
+            color: ${state.isDark ? theme.dark.primary : theme.light.primary};
+          }
         `}
       >
+        <Switch
+          isOn={state.isDark}
+          onColor={theme.dark.primary}
+          handleToggle={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+        />
         <SEO
           title="Nikhil Asrani | Front End Developer"
           keywords={[
@@ -64,7 +65,7 @@ const IndexPage = () => {
         <p id="work-ex">
           currently:
           <br />
-          Software Engineer at
+          Software Engineer at{" "}
           <a
             href="https://remedicohealth.com"
             target="_blank"
@@ -75,7 +76,7 @@ const IndexPage = () => {
           <br />
           past:
           <br />
-          Web Ops at
+          Web Ops at{" "}
           <a
             href="https://www.accenture.com/in-en/services/applied-intelligence/mywizard-intelligent-automation-platform"
             target="_blank"
@@ -95,35 +96,35 @@ const IndexPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub />
+            <FaGithub className="social-icons" />
           </a>
           <a
             href="https://www.linkedin.com/in/nikhil-asrani/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin />
+            <FaLinkedin className="social-icons" />
           </a>
           <a
             href="https://twitter.com/NikhilBAsrani"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter />
+            <FaTwitter className="social-icons" />
           </a>
           <a
             href="https://dribbble.com/nikhilasrani"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDribbble />
+            <FaDribbble className="social-icons" />
           </a>
           <a
             href="https://stackoverflow.com/users/10707802/nikhil-asrani"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaStackOverflow />
+            <FaStackOverflow className="social-icons" />
           </a>
         </div>
       </div>
