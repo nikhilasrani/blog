@@ -1,0 +1,28 @@
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  padding-top: 24px;
+}
+
+#work-ex {
+  font-size: 14px;
+  color: #707070;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+}
+#social-links a {
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+}
