@@ -1,12 +1,12 @@
 export const theme = {
   light: {
-    font: "black",
-    background: "white",
-    primary: "#EF476F",
+    font: "#1C1B1B",
+    background: "#F5F5F5",
+    primary: "#0A9FDE",
   },
   dark: {
-    font: "rgba(255,255,255,0.87)",
-    background: "#30323E",
-    primary: "#AD4154",
+    font: "#FFFFFF",
+    background: "#070707",
+    primary: "#19E8E3",
   },
 }

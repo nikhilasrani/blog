@@ -4,7 +4,6 @@ import { css } from "@emotion/core"
 import { useTheme } from "emotion-theming"
 import Context from "../store/context"
 import Layout from "../components/layout"
-import Switch from "../components/Switch/Switch"
 import SEO from "../components/seo"
 import "./index.css"
 import {
@@ -13,6 +12,8 @@ import {
   FaTwitter,
   FaDribbble,
   FaStackOverflow,
+  FaRegSun,
+  FaRegMoon,
 } from "react-icons/fa"
 
 const IndexPage = () => {
@@ -33,11 +34,21 @@ const IndexPage = () => {
           }
         `}
       >
-        <Switch
-          isOn={state.isDark}
-          onColor={theme.dark.primary}
-          handleToggle={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
-        />
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          {state.isDark ? (
+            <FaRegSun
+              color={"#FFC107"}
+              size={24}
+              onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+            />
+          ) : (
+            <FaRegMoon
+              color={"#262626"}
+              size={24}
+              onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+            />
+          )}
+        </div>
         <SEO
           title="Nikhil Asrani | Front End Developer"
           keywords={[
